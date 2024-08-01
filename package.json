@@ -2,7 +2,7 @@
   "name": "library-site",
   "private": true,
   "version": "0.1.5",
-  "homepage": "https://topchagg.github.io/topchagg.github.io",
+  "homepage": "https://topchagg.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
