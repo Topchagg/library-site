@@ -1,0 +1,14 @@
+.example-title {
+    padding-top: 100px;
+}
+
+.fields-grid-box {
+    display: grid;
+    padding-top: 75px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+    row-gap: 75px;
+}

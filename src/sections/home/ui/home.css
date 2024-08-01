@@ -1,0 +1,48 @@
+.home-h1 {
+    padding-top: 75px;
+}
+
+.text-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.text-wrapper {
+    width: 50%;
+    font-size: 36px;
+}
+
+.form-wrapper {
+    width: 50%;
+}
+
+.form {
+    width: 450px;
+    margin: 0  auto ;
+}
+
+.field-wrapper {
+    padding-bottom: 20px;
+}
+
+.btn {
+    width: 175px;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+
+.btn:hover {
+    background-color: darkgray;
+}
+
+.buttons-wrapper {
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}

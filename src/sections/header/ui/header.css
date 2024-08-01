@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    height: 75px;
+    border: none;
+    border-bottom: solid lightblue 1px;
+    box-shadow: 0px 0px 450px 1px lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items-wrapper {
+    display: flex;
+}
+
+.nav-item {
+    padding-left: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.nav-item:hover {
+    color: red;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+}

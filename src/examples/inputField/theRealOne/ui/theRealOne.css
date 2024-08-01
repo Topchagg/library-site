@@ -1,0 +1,44 @@
+.wood-default {
+    width: 600px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 42px;
+    padding: 10px;
+    padding-left: 30px;
+    transition: 400ms;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+.wood-style-valid {
+    border: solid 4px #728BAD;
+}
+
+.wood-style-invalid {
+    border: solid 4px brown;    
+}
+
+.wood-btn {
+    margin-top: 40px;
+    width: 210px;
+    height: 60px;
+    background-color: #728BAD;
+    color: #F5F5F5;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 42px;
+    border: none;
+    transition: 400ms;
+}
+
+
+.wood-btn:hover {
+    background-color: #3b506d;
+}
+
+.text-area-field-wrapper {
+    height: 250px;
+}

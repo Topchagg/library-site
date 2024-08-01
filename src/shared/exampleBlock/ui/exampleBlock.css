@@ -1,0 +1,9 @@
+.example-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-block {
+    width: 42%;
+}

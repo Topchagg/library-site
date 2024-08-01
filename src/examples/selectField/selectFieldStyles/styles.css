@@ -1,0 +1,8 @@
+.select-field {
+    border: solid red 2px;
+    outline: none;
+    border-radius: 35px;
+    background-color: black;
+    color: aliceblue;
+}
+
