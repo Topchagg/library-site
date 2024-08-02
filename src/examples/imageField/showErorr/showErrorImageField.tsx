@@ -15,7 +15,7 @@ const ShowErrorImageField = () => {
             <ReactiveForm setFunc={setForm} setObject={form}>
                 {!form['image'].isValid && <div>Image can't be weighter than 35000 bytes!</div>}
                 <div>
-                    <ImageField isTrigger name="image" maxBytes={35000} id="image"/>
+                    <ImageField isTrigger name="image" maxBytes={35000} id="image" backToTrueIn={3000}/>
                     <label htmlFor="image">
                         <div className="default-image-styles">
                            ** Send Image **
