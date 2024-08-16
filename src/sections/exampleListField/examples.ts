@@ -4,9 +4,9 @@ import InputListField from "../../examples/listField/inputListField/inputListFie
 import listExampleBtnInterface from "../../shared/types/exampleBtnInterface"
 
 import imageListField from "../../examples/listField/imagesListField/elementImageListField"
-import codeImageFieldDefaultExample from "../../examples/imageField/defaultExample/codeBaseImageFieldDefault"
 import codeObjectListField from "../../examples/listField/objectListField/codeObjectListField"
 import ObjectListField from "../../examples/listField/objectListField/elementObjectListField"
+import codeImageListField from "../../examples/listField/imagesListField/codeImageListField"
 
 const listExamples:listExampleBtnInterface = [
     {
@@ -16,7 +16,7 @@ const listExamples:listExampleBtnInterface = [
     },
     {
         text:'Images + Delete',
-        codeBase:codeImageFieldDefaultExample,
+        codeBase:codeImageListField,
         element:imageListField
     },
     {

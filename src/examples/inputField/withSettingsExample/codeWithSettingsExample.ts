@@ -1,5 +1,5 @@
 const codeWithSettingsExample = `
-import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues,fieldSettings } from "reactive-fast-form"
+import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues,fieldSettings, formIsValid } from "reactive-fast-form"
 
 const WithSettingsExample = () => {
 
@@ -12,7 +12,11 @@ const WithSettingsExample = () => {
     }
 
     useActionOnSubmit(() => {
-        alert(JSON.stringify(getFormValues(form)))
+        if(formIsValid(form)){
+            alert(JSON.stringify(getFormValues(form)))
+        }else {
+            alert('Form isn't valid')
+        }
     },trigger)
 
     return (

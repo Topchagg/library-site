@@ -1,11 +1,15 @@
-import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues } from "reactive-fast-form"
+import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues, formIsValid } from "reactive-fast-form"
 
 const DefaultInputFieldExample = () => {
 
     const [form,setForm,trigger] = useCreateForm(['name'])
 
     useActionOnSubmit(() => {
-        alert(JSON.stringify(getFormValues(form)))
+        if(formIsValid(form)){
+            alert(JSON.stringify(getFormValues(form)))
+        }else {
+            alert('Form isn`t valid')
+        }
     },trigger)
 
 

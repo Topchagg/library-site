@@ -1,13 +1,17 @@
 
 const codeAsTextAreaField = `
-import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues } from 'reactive-fast-form'
+import { useCreateForm,InputField,useActionOnSubmit,setGlobalObject, ReactiveForm, getFormValues, formIsValid } from 'reactive-fast-form'
 
 const AsTextAreaField = () => {
 
     const [form,setForm,trigger] = useCreateForm(['message'])
 
     useActionOnSubmit(() => {
-        alert(JSON.stringify(getFormValues(form)))
+        if(formIsValid(form)){
+            alert(JSON.stringify(getFormValues(form)))
+        }else {
+            alert('Form isnt valid')
+        }
     },trigger)
 
     return (
